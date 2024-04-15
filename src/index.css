@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.menu-bar {
+  position: absolute;
+  top: 0;
+  right: 0; /* Aligner la barre de menu à droite */
+  width: auto; /* Largeur automatique pour s'adapter au contenu */
+  height: 60px;
+  display: flex;
+  justify-content: flex-end; /* Aligner les éléments à droite */
+}
+
+.menu-item {
+  color: white;
+  font-size: 50px;
+  padding: 5px 10px;
+  margin-right: 20px; /* Espacement entre les éléments de menu */
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  margin-right: 0; /* Supprimer la marge à droite du dernier élément de menu */
+}
+.menu-item {
+  color: black; /* Couleur du texte noire */
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+.menu-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Aligner les éléments verticalement */
+}
+
+.menu-item {
+  color: black;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  margin-right: 10px; /* Réduire la marge pour aligner avec le bouton */
+}
+
+.sign-in-button {
+  padding: 8px 15px; /* Ajouter un espacement pour correspondre aux liens */
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.btn-primary {
+  color: #fff; /* Couleur du texte */
+  background-color: purple; /* Couleur de fond violet */
+  border-color: purple; /* Couleur de la bordure */
+}
+
+.btn-primary:hover {
+  background-color: darkpurple; /* Couleur de fond violet foncé au survol */
+  border-color: darkpurple; /* Couleur de la bordure au survol */
+}
+.menu-item {
+  color: black;
+  font-size: 14px;
+  font-weight: bold; /* Mettre en gras */
+  text-decoration: none; /* Supprimer le soulignement */
+  padding: 5px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  text-decoration: none; /* Supprimer le soulignement au survol */
+}
+.transitionEffect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transitionEffect:hover {
+  transform: translateY(-5px);
+}
+#scrollAnimation {
+  transition: opacity 1s ease-in-out;
+}
+.box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+  transition:
+    width 2s,
+    height 2s,
+    background-color 2s,
+    transform 2s;
+}
+
+.box:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+/* Animation pour le premier bloc */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation pour le deuxième bloc */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+/* Transition pour le premier bloc */
+.fadeIn {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 1; /* Ajout de cette ligne pour maintenir l'opacité à 1 */
+}
+
+/* Transition pour le deuxième bloc */
+.slideIn {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  opacity: 1; /* Ajout de cette ligne pour maintenir l'opacité à 1 */
+}
